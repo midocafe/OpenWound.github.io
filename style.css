@@ -82,6 +82,19 @@ margin-bottom: 3%;} */
 
 .bluemarlin_01:hover .bluemarlin_01_closeup {display: block;} 
 
+.spines_01 {
+    transform: scale(0.08);
+    transform-origin: top left; 
+    width: auto; 
+    height: auto;  
+    position: absolute; 
+    
+    top: 80%;
+    left: 30%;
+    z-index: 0; 
+    mix-blend-mode: normal;
+    }
+
 /* 
 audio {
     width: 30%; 
