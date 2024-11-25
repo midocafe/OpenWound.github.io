@@ -1,0 +1,122 @@
+body{
+    background-color: #0400ff;
+    font-size: medium;
+    font-family: serif;
+    
+    color: rgb(255, 148, 234);
+}
+
+
+/* p{font-size: large;
+line-height: 200%;
+margin: 10%;} */
+
+
+.title {color:rgb(255, 0, 119);
+    margin-top: 30%;
+    margin-left: 50%;
+    font-size: 200%;
+    z-index: 2;
+}
+
+/* .translation1 {color:rgb(255, 0, 119);
+font-size: 100%;
+mix-blend-mode: screen;
+opacity: 0.5;
+z-index: 2;
+margin-top: 8%;
+} */
+
+/* .title2 {color: rgb(132, 255, 0);
+margin-top: 3%;
+margin-bottom: 3%;} */
+
+/* .center-text {text-align: center;} */
+
+/* h1 {text-shadow: 
+        0 0 30px #ff5c11,  
+        0 0 40px #ff0077,
+        0 0 50px #ffbb00; } */
+
+/* .colorbox{
+    background-color: rgb(242, 255, 0);
+    width: 200px;
+    height: 500px;
+    position: fixed;
+    top: 50%;
+    left: 70%;
+    /* top: 0;
+    left: 50%;
+    right: 10%; */
+    /* z-index: -2;
+    mix-blend-mode: multiply; 
+    opacity: 0.6;
+} */
+
+.bluemarlin_01 {
+    transform: scale(0.08);
+    transform-origin: top left; 
+    width: auto; 
+    height: auto;  
+    position: absolute; 
+    
+    top: 30%;
+    left: 30%;
+    z-index: 0; 
+    mix-blend-mode: normal;
+    }
+
+.bluemarlin_01_closeup {
+    transform: scale(6, 4);
+    transform-origin: center; 
+    width: auto; 
+    height: auto;  
+    position: absolute; 
+    display: none;
+            
+    top: -50%;
+    left: -100%;
+    z-index: 2; 
+    mix-blend-mode: difference;
+    }
+
+.bluemarlin_01:hover .bluemarlin_01_closeup {display: block;} 
+
+/* 
+audio {
+    width: 30%; 
+    top: 20px;
+    left: 35%;
+    position: absolute; 
+    transform: scale(0.7);
+    opacity: 0.8;
+    mix-blend-mode: soft-light;
+} */
+
+/* .visible2 {
+        position: relative;  
+        display: inline-block;  
+        overflow: show;
+        top: 50px;        
+        left: 50px;      
+        width: 900px;
+        height: auto; 
+        } 
+    
+/* .train {
+        transform: scale(1);
+        transform-origin: top left; 
+        width: auto; 
+        height: auto; 
+    
+        display: none; 
+        position: relative; 
+        
+        top: 300%;
+        left: -70%;
+        z-index: -2; 
+        mix-blend-mode: soft-light;
+            }
+
+.visible2:hover .train {display: block;} 
+ */
