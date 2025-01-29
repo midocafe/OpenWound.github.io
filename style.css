@@ -3,7 +3,9 @@ body{
     font-size: medium;
     font-family: serif;
     
-    color: rgb(255, 148, 234);
+    color: rgb(255, 255, 255);
+
+    /* cursor: url('pixelcurser.png') 16 16, auto; */
 }
 
 
@@ -76,34 +78,143 @@ margin-bottom: 3%;} */
             
     top: -50%;
     left: -100%;
-    z-index: 2; 
+    z-index: 0; 
     mix-blend-mode: difference;
     }
 
 .bluemarlin_01:hover .bluemarlin_01_closeup {display: block;} 
 
 .spines_01 {
-    transform: scale(0.08);
-    transform-origin: top left; 
-    width: auto; 
-    height: auto;  
-    position: absolute; 
+    transform: scale(0.5);
+    transform-origin: center; 
+    width: 100%; 
+    height: 100%;  
+    position: fixed; 
     
-    top: 80%;
-    left: 30%;
-    z-index: 0; 
+    top: -500px;
+    left: -600px;
+    z-index: -100; 
     mix-blend-mode: normal;
     }
 
-/* 
-audio {
-    width: 30%; 
-    top: 20px;
-    left: 35%;
+.background_top {
+    transform: scale(0.38, 0.36);
+    transform-origin: top left; 
+    width: 100%; 
+    height: 100%;  
+    position: fixed; 
+        
+    top: 0;
+    left: 0;
+    z-index: -20; 
+    mix-blend-mode: difference;
+    }
+
+.eyes { 
+    transform: scale(0.5);
+    transform-origin: top left; 
+    width: 100%; 
+    height: 100%;  
+    position: relative; 
+        
+    top: 70%;
+    left: 80%;
+    z-index: 0; 
+    mix-blend-mode: normal;}
+    
+/* #colorBlock {
+    width: 400px;  
+    height: 250px;  
+    background-color: rgb(197, 166, 255);  
     position: absolute; 
-    transform: scale(0.7);
-    opacity: 0.8;
-    mix-blend-mode: soft-light;
+    pointer-events: none; 
+    transition: transform 0.1s ease; 
+    mix-blend-mode: difference;
+    } */
+
+#colorBlock {
+    width: 400px;  
+    height: 400px;      
+    background-color: #7ff0ff;      
+    position: absolute;    
+    pointer-events: none;    
+    transition: transform 0.1s ease; 
+    mix-blend-mode: overlay;
+    border-radius: 50%;
+    }    
+
+#floating-image {
+    position: absolute;
+    width: 1000px; /* Adjust size as needed */
+    height: auto;
+    transition: all 0.1s ease-in-out; /* Smooth transition */
+    mix-blend-mode: color-burn;
+    }
+
+.textblock {
+    background-color: #1a0aac;  /* Light grey background */
+    padding: 20px;
+    width: 30%;  /* 80% of the page width */
+    margin: 100px auto;  /* Center the div horizontally */
+    mix-blend-mode: lighten;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 30%;
+    z-index: 11;
+    }
+
+    audio {
+        width: 100%; /* Control the width of the audio player */
+        margin: 20px 0; /* Add some margin to space the audio player from the text */
+        border: 2px solid #ffffff; /* Add a border around the player */
+        /* Remove border-radius to keep rigid corners */
+        border-radius: 0; 
+        padding: 5px; /* Optional: Add some padding inside the player */
+        transform: scale(0.7);
+        mix-blend-mode: difference;
+        }
+
+.textblock p {
+    font-size: 18px;
+    font-family: 'Franklin Gothic light', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.2;  /* Makes the text more readable */
+
+    color: #fffa5d;  /* Dark grey text color */
+    text-align: justify;  /* Justifies the text */
+    mix-blend-mode: normal;
+    text-size-adjust: large;
+    }    
+
+/* 同义词wound */
+.text_wounds {
+    top: 30%;
+    left: 65%;
+    z-index: 10; 
+    /* mix-blend-mode: difference; */
+    position: absolute;
+    }
+
+.synonym-text {
+    font-size: 24px;
+    color: rgb(255, 0, 170);
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    }
+      
+.synonym-text.active {
+    color: rgb(255, 0, 170);
+    }
+
+/* .audio {
+    width: 50px; 
+    top: 600px;
+    left: o;
+    position: absolute; 
+    transform: scale(0.8);
+    opacity: 1;
+    z-index: 4;
+    mix-blend-mode: difference;
 } */
 
 /* .visible2 {
